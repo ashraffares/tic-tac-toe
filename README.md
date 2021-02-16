@@ -1,7 +1,7 @@
 
 # game
 
-> This is the readMe for the Ruby first week Project. It is a small program for sorting using Ruby's enumerable methods.
+> This is the readMe for the Ruby game first week Project. It is a small program for sorting using Ruby's enumerable methods.
 
 ![screenshot](./screen.png)
 
