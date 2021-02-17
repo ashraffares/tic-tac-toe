@@ -56,6 +56,20 @@ def get_inputs(board)
   end
 end
 
+def player_won(player_one_turn)
+  puts 'Game ended!'
+  if player_one_turn
+    puts 'Player one won!'
+  else
+    puts 'Player two won!'
+  end
+end
+
+def draw
+  puts 'Game ended!'
+  puts "It's a draw"
+end
+
 new_player
 boardshap(board)
 user_move(board, 'x')
