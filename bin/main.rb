@@ -34,7 +34,7 @@ def user_move(board, player_sign)
     puts 'Enter your move from 1 to 9'
     player_turn(player_sign)
     moveaction = get_inputs(board, player_sign)
-    board[moveaction - 1] = player_sign
+    board[moveaction.to_i - 1] = player_sign
     move_counts += 1
     boardshap(board)
     player_sign = if player_sign == 'x'
@@ -56,13 +56,14 @@ end
 def get_inputs(board, player_sign)
   moveaction = gets.chomp.to_i
   if moveaction <= 9 && moveaction.positive?
+    if board[moveaction - 1] == 'x' || board[moveaction - 1] == 'o'
+      puts 'already selected!!!'
+      user_move(board, player_sign)
+    end
+    moveaction
+  else
     puts 'invaild inputs please enter number from 1 to 9!!!'
     user_move(board, player_sign)
-  elsif board[moveaction - 1] == 'x' || board[moveaction - 1] == 'o'
-    puts 'wrong move already selected!!!'
-    user_move(board, player_sign)
-  else
-    moveaction
   end
 end
 
@@ -79,7 +80,6 @@ def draw
   puts 'Game ended!'
   puts "It's a draw"
 end
-
 
 new_player
 user_move(board, 'x')
