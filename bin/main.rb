@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+
 puts 'welcome to tic toc toe game'
 def new_player
   puts 'player one choose a symbol x or o ?'
@@ -54,8 +55,8 @@ end
 
 def get_inputs(board, player_sign)
   moveaction = gets.chomp.to_i
-  if moveaction > 9 || moveaction.negative? || moveaction.zero?
-    puts 'wrong move out of the board!!!'
+  if moveaction <= 9 && moveaction.positive?
+    puts 'invaild inputs please enter number from 1 to 9!!!'
     user_move(board, player_sign)
   elsif board[moveaction - 1] == 'x' || board[moveaction - 1] == 'o'
     puts 'wrong move already selected!!!'
@@ -78,6 +79,7 @@ def draw
   puts 'Game ended!'
   puts "It's a draw"
 end
+
 
 new_player
 user_move(board, 'x')
