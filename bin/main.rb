@@ -31,6 +31,7 @@ def user_move(board, player_sign)
   move_counts = 1
   while move_counts <= 9
     puts 'Enter your move from 1 to 9'
+    player_turn(player_sign)
     moveaction = get_inputs(board, player_sign)
     board[moveaction - 1] = player_sign
     move_counts += 1
@@ -40,6 +41,14 @@ def user_move(board, player_sign)
                   else
                     'x'
                   end
+  end
+end
+
+def player_turn(player_sign)
+  if player_sign == 'o'
+    puts 'your turn second player'
+  else
+    puts 'your turn first player'
   end
 end
 
