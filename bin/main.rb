@@ -30,27 +30,32 @@ end
 def user_move(board, player_sign)
   move_counts = 1
   while move_counts <= 9
-    puts 'Enter your move from 1 to 9'
-    moveaction = gets.chomp.to_i
-    if !(moveaction <= 9) && (!moveaction > 0)
-      puts 'wrong move out of the board where are you going!!!'
-      return user_move(board, player_sign)
-    elsif board[moveaction - 1] == 'x' || board[moveaction - 1] == 'o'
-      puts 'wrong move are you blind!!!'
-      return user_move(board, player_sign)
-    else
-      board[moveaction - 1] = player_sign
-      move_counts += 1
-      boardshap(board)
-      player_sign = if player_sign == 'x'
-                      'o'
-                    else
-                      'x'
-                    end
-    end
+    moveaction = get_inputs(board)
+    board[moveaction - 1] = player_sign
+    move_counts += 1
+    boardshap(board)
+    player_sign = if player_sign == 'x'
+                    'o'
+                  else
+                    'x'
+                  end
+  end
+end
+
+def get_inputs(board)
+  puts 'Enter your move from 1 to 9'
+  moveaction = gets.chomp.to_i
+  if moveaction > 9 && !moveaction.positive?
+    puts 'wrong move out of the board where are you going!!!'
+    user_move(board, player_sign)
+  elsif board[moveaction - 1] == 'x' || board[moveaction - 1] == 'o'
+    puts 'wrong move are you blind!!!'
+    user_move(board, player_sign)
+  else
+    moveaction
   end
 end
 
 new_player
 boardshap(board)
-user_move(board, player_sign = 'x')
+user_move(board, 'x')
