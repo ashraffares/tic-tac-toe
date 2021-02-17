@@ -71,5 +71,4 @@ def draw
 end
 
 new_player
-boardshap(board)
 user_move(board, 'x')
