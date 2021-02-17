@@ -27,9 +27,9 @@ please enjoy!
 
 👤 **Author1**
 
-- GitHub: [@MandeIn](https://github.com/MandeIn)
-- Twitter: [@MandeIn](https://twitter.com/MandeIn)
-- LinkedIn: [MandeIn](https://linkedin.com/MandeIn)
+- GitHub: [@githubhandle](https://github.com/@uwadonat)
+- Twitter: [@twitterhandle](https://twitter.com/@uwamahoroDonat)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/uwamahoro-donat-84b5bb1b7/)
 
 👤 **Author2**
 - twitter:@Fares09301164
