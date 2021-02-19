@@ -1,28 +1,28 @@
+# Game Name
 
-# game
+Tic tac toe
+# Game description
 
-> This is the readMe for the Ruby game first week Project. It is a small program for sorting using Ruby's enumerable methods.
+This project implements Tic tac game. The game should be played by two participants, where each one will be having its Idantification on the board 
+# Game flow
 
-![screenshot](./screen.png)
-
-Good day world
-
-
-Lets welcome one more code in the line of many more to come during my time here at Microverse.
--Matija Maksimovic
-
-
-please enjoy!
+   - First player will be asked to select symbol to play with either X or O
+   - Second player will be assigned with the symbol not taken
+   - Players will be moving their symbols on board alternatively targeting to fill three same symbols successive which means Win
+   - Players will move their symbols nine time. If none will the game is over.
 
 ## Built With
 
 - Ruby
-
 ## Getting Started
 
-**First ensure the assets folder is set in a location which is in the same folder as the other files. The Index and CSS should also be easily accessible. All the content in this project was linked to offline files in the assets folder.**
+- git clone: Github repo
+- cd repo-folder
+- start program: Ruby bin/main.rb on your command line or terminal
 
+# Prerequisites
 
+- Ruby installed on your local machine. Code editor (like  VSCode) Terminal or similar to execute the program.
 ## Authors
 
 👤 **Author1**
