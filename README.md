@@ -4,16 +4,33 @@ Tic tac toe
 # Game description
 
 This project implements Tic tac game. The game should be played by two participants, where each one will be having its Idantification on the board 
+
+![screenshot](https://github.com/ashraffares/game/blob/readme_game_instructions/images/Capture.PNG)
+![screenshot](https://github.com/ashraffares/game/blob/readme_game_instructions/images/Capture1.PNG)
+![screenshot](https://github.com/ashraffares/game/blob/readme_game_instructions/images/Capture2.PNG)
+![screenshot](https://github.com/ashraffares/game/blob/readme_game_instructions/images/Capture3.PNG)
+![screenshot](https://github.com/ashraffares/game/blob/readme_game_instructions/images/Capture5.PNG)
+- Additional description about the project and its features.
 # Game flow
 
-   - First player will be asked to select symbol to play with either X or O
-   - Second player will be assigned with the symbol not taken
-   - Players will be moving their symbols on board alternatively targeting to fill three same symbols successive which means Win
-   - Players will move their symbols nine time. If none will the game is over.
+- First player will be asked to select symbol to play with either X or O
+- Second player will be assigned with the symbol not taken
+- Players will be moving their symbols on board alternatively targeting to fill three same symbols successive which means Win
+- Players will move their symbols nine time. If none will the game is over.
 
 ## Built With
 
 - Ruby
+
+## Knowledge about Ruby:
+
+- Variables
+- Loops
+- Arrays
+- Methods
+- Blocks
+- Classes
+- Module
 ## Getting Started
 
 - git clone: Github repo
@@ -32,10 +49,10 @@ This project implements Tic tac game. The game should be played by two participa
 - LinkedIn: [LinkedIn](https://linkedin.com/in/uwamahoro-donat-84b5bb1b7/)
 
 👤 **Author2**
-- twitter:@Fares09301164
-- GitHub: https://github.com/ashraffares/http-ashraffares.github.io-
-- linkedin:https://www.linkedin.com/in/fares-ashraf-382a35176/
 
+- GitHub: [@githubhandle](https://github.com/ashraffares/http-ashraffares.github.io-)
+- Twitter: [@twitterhandle](https://twitter.com/Fares09301164)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/fares-ashraf-382a35176/)
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
@@ -53,4 +70,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](https://opensource.org/licenses/MIT) licensed.
-
