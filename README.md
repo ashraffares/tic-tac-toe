@@ -5,8 +5,11 @@ Tic tac toe
 
 This project implements Tic tac game. The game should be played by two participants, where each one will be having its Idantification on the board 
 
-![screenshot]()
-
+![screenshot](https://github.com/ashraffares/game/blob/readme_game_instructions/images/Capture.PNG)
+![screenshot](https://github.com/ashraffares/game/blob/readme_game_instructions/images/Capture1.PNG)
+![screenshot](https://github.com/ashraffares/game/blob/readme_game_instructions/images/Capture2.PNG)
+![screenshot](https://github.com/ashraffares/game/blob/readme_game_instructions/images/Capture3.PNG)
+![screenshot](https://github.com/ashraffares/game/blob/readme_game_instructions/images/Capture5.PNG)
 Additional description about the project and its features.
 # Game flow
 
