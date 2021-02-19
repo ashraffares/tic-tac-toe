@@ -1,9 +1,11 @@
 
-# game
+# Game Name
 
-> This is the readMe for the Ruby game first week Project. It is a small program for sorting using Ruby's enumerable methods.
+Tic tac toe
 
-![screenshot](./screen.png)
+# Game description
+
+This game should be played by two persons, by moving any 
 
 Good day world
 
