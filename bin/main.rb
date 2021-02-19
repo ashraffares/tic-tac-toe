@@ -5,7 +5,7 @@ include Player
 def players(sign)
   state = true
   while state
-    if Player.sign_validate(sign)
+    if sign_validate(sign)
       puts "player #{sign} make the move"
       break
     else
@@ -19,7 +19,7 @@ end
 def move_check(move, array, var)
   state = true
   while state
-    if Player.move_validate(move) && Player.index_taken(move - 1, array)
+    if move_validate(move) && Player.index_taken(move - 1, array)
       array[move - 1] = var
       break
     else
@@ -38,16 +38,15 @@ while i < 9
   move = gets.chomp.to_i
   move_check(move, array, sign)
   puts b.draw_board(array).to_s
-  if Player.wins(array, sign)
+  if wins(array, sign)
     puts "player #{sign} wins \u{1F911}"
     break
   end
   if i == 8
-    Player.draw
+    draw
     break
   end
-  sign = Player.flip_user(sign)
+  sign = flip_user(sign)
   puts "player #{sign} make the move"
   i += 1
 end
-
