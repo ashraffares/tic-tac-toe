@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
-
 require_relative '../lib/settings'
 require_relative '../lib/logic'
 include Player
