@@ -41,7 +41,7 @@ module Player
       'x'
     end
   end
-# wins methods check the board for the right move and return true or false
+  
   def wins(array, sign)
     arr = []
     state = false
