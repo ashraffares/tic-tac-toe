@@ -4,16 +4,30 @@ Tic tac toe
 # Game description
 
 This project implements Tic tac game. The game should be played by two participants, where each one will be having its Idantification on the board 
+
+![screenshot]()
+
+Additional description about the project and its features.
 # Game flow
 
-   - First player will be asked to select symbol to play with either X or O
-   - Second player will be assigned with the symbol not taken
-   - Players will be moving their symbols on board alternatively targeting to fill three same symbols successive which means Win
-   - Players will move their symbols nine time. If none will the game is over.
+- First player will be asked to select symbol to play with either X or O
+- Second player will be assigned with the symbol not taken
+- Players will be moving their symbols on board alternatively targeting to fill three same symbols successive which means Win
+- Players will move their symbols nine time. If none will the game is over.
 
 ## Built With
 
 - Ruby
+
+## Knowledge about Ruby:
+
+- Variables
+- Loops
+- Arrays
+- Methods
+- Blocks
+- Classes
+- Module
 ## Getting Started
 
 - git clone: Github repo
