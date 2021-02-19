@@ -5,9 +5,11 @@ Tic tac toe
 
 # Game description
 
-This game should be played by two persons, by moving any 
+This game should be played by two participants, where each one will be having it Idantification on the board 
 
-Good day world
+# Game flow
+
+
 
 
 Lets welcome one more code in the line of many more to come during my time here at Microverse.
