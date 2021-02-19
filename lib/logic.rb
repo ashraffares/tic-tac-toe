@@ -41,7 +41,7 @@ module Player
       'x'
     end
   end
-  
+
   def wins(array, sign)
     arr = []
     state = false
