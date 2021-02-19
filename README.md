@@ -1,12 +1,9 @@
-
 # Game Name
 
 Tic tac toe
-
 # Game description
 
 This project implements Tic tac game. The game should be played by two participants, where each one will be having its Idantification on the board 
-
 # Game flow
 
    - First player will be asked to select symbol to play with either X or O
@@ -19,9 +16,13 @@ This project implements Tic tac game. The game should be played by two participa
 - Ruby
 ## Getting Started
 
-    git clone: Github repo
-    cd repo-folder
-    start program: Ruby bin/main.rb on your command line or terminal
+- git clone: Github repo
+- cd repo-folder
+- start program: Ruby bin/main.rb on your command line or terminal
+
+# Prerequisites
+
+- Ruby installed on your local machine. Code editor (like  VSCode) Terminal or similar to execute the program.
 ## Authors
 
 👤 **Author1**
