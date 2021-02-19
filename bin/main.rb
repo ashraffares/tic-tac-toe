@@ -17,6 +17,7 @@ def players(sign)
   sign
 end
 
+# move_check which takes the user input and validate input for number between 1 and 9 and make move on the board
 def move_check(move, array, var)
   state = true
   while state
@@ -35,6 +36,7 @@ puts 'choose the player (1 is x) or (2 is o)'
 sign = gets.chomp
 sign = players(sign)
 
+# draw if no wins just print draw
 def draw
   puts 'its a draw'
   puts "Game Ended ! \u{1F61C}"
