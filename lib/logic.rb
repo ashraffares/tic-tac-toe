@@ -64,9 +64,4 @@ module Player
     end
     state
   end
-
-  def draw
-    puts 'its a draw'
-    puts "Game Ended ! \u{1F61C}"
-  end
 end

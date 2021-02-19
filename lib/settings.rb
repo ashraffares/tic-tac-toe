@@ -1,4 +1,3 @@
-# rubocop:disable Layout/LineLength
 class Settings
   def draw_board(array)
     @playing_array = array
