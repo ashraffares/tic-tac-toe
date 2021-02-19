@@ -1,8 +1,7 @@
 #!/usr/bin/env ruby
-# rubocop:disable Layout/LineLength
 require_relative '../lib/settings'
 require_relative '../lib/logic'
-include Player
+include Player # rubocop:disable Style/MixinUsage
 
 def players(sign)
   state = true
@@ -58,4 +57,3 @@ while i < 9
   puts "player #{sign} make the move"
   i += 1
 end
-# rubocop:enable Layout/LineLength
