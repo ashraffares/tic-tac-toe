@@ -48,7 +48,7 @@ while i < 9
   move = gets.chomp.to_i
   move_check(move, array, sign, player)
   puts b.draw_board(array).to_s
-  if player.wins(array, sign, )
+  if player.wins(array, sign)
     puts "player #{sign} wins \u{1F911}"
     break
   end
