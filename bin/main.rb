@@ -1,11 +1,13 @@
 #!/usr/bin/env ruby
 require_relative '../lib/settings'
 require_relative '../lib/logic'
+# rubocop:disable Layout/LineLength
 include Player
+
 def players(sign)
   state = true
   while state
-    if sign_validate(sign)
+    if Player.sign_validate(sign)
       puts "player #{sign} make the move"
       break
     else
@@ -19,7 +21,7 @@ end
 def move_check(move, array, var)
   state = true
   while state
-    if move_validate(move) && Player.index_taken(move - 1, array)
+    if Player.move_validate(move) && Player.index_taken(move - 1, array)
       array[move - 1] = var
       break
     else
@@ -33,6 +35,12 @@ array = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 puts 'choose the player (1 is x) or (2 is o)'
 sign = gets.chomp
 sign = players(sign)
+
+def draw
+  puts 'its a draw'
+  puts "Game Ended ! \u{1F61C}"
+end
+
 i = 0
 while i < 9
   move = gets.chomp.to_i
@@ -43,10 +51,11 @@ while i < 9
     break
   end
   if i == 8
-    draw
+      draw()
     break
   end
   sign = flip_user(sign)
   puts "player #{sign} make the move"
   i += 1
 end
+# rubocop:enable Layout/LineLength
