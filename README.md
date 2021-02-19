@@ -49,10 +49,11 @@ Additional description about the project and its features.
 - LinkedIn: [LinkedIn](https://linkedin.com/in/uwamahoro-donat-84b5bb1b7/)
 
 👤 **Author2**
-- twitter:@Fares09301164
-- GitHub: https://github.com/ashraffares/http-ashraffares.github.io-
-- linkedin:https://www.linkedin.com/in/fares-ashraf-382a35176/
 
+
+- GitHub: [@githubhandle](https://github.com/ashraffares/http-ashraffares.github.io-)
+- Twitter: [@twitterhandle](https://twitter.com/Fares09301164)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/fares-ashraf-382a35176/)
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
