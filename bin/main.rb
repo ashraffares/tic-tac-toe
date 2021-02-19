@@ -2,7 +2,7 @@
 require_relative '../lib/settings'
 require_relative '../lib/logic'
 include Player # rubocop:disable Style/MixinUsage
-#player sign just valdiate that the use Enter the correct symbol
+# player sign just valdiate that the use Enter the correct symbol
 def players(sign)
   state = true
   while state
