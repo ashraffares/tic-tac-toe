@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
+# rubocop:disable Layout/LineLength
 require_relative '../lib/settings'
 require_relative '../lib/logic'
-# rubocop:disable Layout/LineLength
 include Player
 
 def players(sign)
@@ -51,7 +51,7 @@ while i < 9
     break
   end
   if i == 8
-      draw()
+    draw
     break
   end
   sign = flip_user(sign)
