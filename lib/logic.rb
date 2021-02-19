@@ -1,15 +1,21 @@
-module Player
-  @player1 = 'x'
-  @player2 = 'o'
+class Player
+  def game_name
+    'Wlecome to tic tac toe'
+  end
+
   def player_sign(sign)
+    @player1 = 'x'
+    @player2 = 'o'
     if sign == 'x'
-      @player1
+      @@player1
     else
-      @player2
+      @@player2
     end
   end
 
   def sign_validate(sign)
+    @player1 = 'x'
+    @player2 = 'o'
     if [@player1, @player2].include?(sign)
       true
     else
@@ -31,14 +37,6 @@ module Player
       false
     else
       true
-    end
-  end
-
-  def flip_user(var)
-    if var == 'x'
-      'o'
-    else
-      'x'
     end
   end
 
