@@ -10,7 +10,7 @@ This project implements Tic tac game. The game should be played by two participa
 ![screenshot](https://github.com/ashraffares/game/blob/readme_game_instructions/images/Capture2.PNG)
 ![screenshot](https://github.com/ashraffares/game/blob/readme_game_instructions/images/Capture3.PNG)
 ![screenshot](https://github.com/ashraffares/game/blob/readme_game_instructions/images/Capture5.PNG)
-Additional description about the project and its features.
+- Additional description about the project and its features.
 # Game flow
 
 - First player will be asked to select symbol to play with either X or O
