@@ -16,7 +16,7 @@ This project implements Tic tac game. The game should be played by two participa
 - First player will be asked to select symbol to play with either X or O
 - Second player will be assigned with the symbol not taken
 - Players will be moving their symbols on board alternatively targeting to fill three same symbols successive which means Win
-- Players will move their symbols nine time. If none will the game is over.
+- Players will move their symbols nine time. If none win the game is over.
 
 ## Built With
 
