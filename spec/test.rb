@@ -2,14 +2,14 @@ require_relative '../lib/settings'
 require_relative '../lib/logic'
 array = ['x', 2, 3, 'o', 5, 6, 'x', 'x', 9]
 player = Player.new
-# add game name test
+
 describe Player do
   describe '#game_name' do
     it 'return string' do
       player.game_name.eql?('Wlecome to tic tac toe')
     end
   end
-  # add sign_validate test
+
   describe '#sign_validate' do
     it 'return true or false' do
       player.sign_validate('x').eql?(true)
@@ -17,7 +17,7 @@ describe Player do
       player.sign_validate('s').eql?(false)
     end
   end
-  # move_validate
+
   describe '#move_validate' do
     it 'return true or false' do
       player.move_validate('1').eql?(true)
