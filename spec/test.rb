@@ -39,8 +39,8 @@ describe Player do
 
   describe '#wins' do
     it 'return true or false' do
-      expect(player.wins(%W[x x x], 'x')).to eql(true)
-      expect(player.wins(%W[o x x], 'o')).to eql(false)
+      expect(player.wins(%w[x x x], 'x')).to eql(true)
+      expect(player.wins(%w[o x x], 'o')).to eql(false)
     end
   end
 end
