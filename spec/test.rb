@@ -45,21 +45,19 @@ describe Player do
   end
 end
 
-
 describe Settings do
-    describe '#flip_user' do
-      it 'return x or o' do
-        setting = Settings.new
-        setting.flip_user('x').eql?('o')
-        setting.flip_user('o').eql?('x')
-      end
+  describe '#flip_user' do
+    it 'return x or o' do
+      setting = Settings.new
+      setting.flip_user('x').eql?('o')
+      setting.flip_user('o').eql?('x')
     end
+  end
 
-    describe '#draw_board' do
-        it 'return board on screen' do
-          setting = Settings.new
-          setting.draw_board(array).eql?('')
-        end
-      end
-
+  describe '#draw_board' do
+    it 'return board on screen' do
+      setting = Settings.new
+      setting.draw_board(array).eql?('')
     end
+  end
+end
