@@ -11,6 +11,7 @@ describe Player do
   end
 
   #sign_validate
+
   describe '#sign_validate' do
     it 'return true or false' do
       player.sign_validate('x').eql?(true)
@@ -20,6 +21,7 @@ describe Player do
   end
 
   #move_validate
+
   describe '#move_validate' do
     it 'return true or false' do
       player.move_validate('1').eql?(true)
@@ -29,6 +31,7 @@ describe Player do
   end
 
   #index_taken
+  
   describe '#index_taken' do
     it 'return true or false' do
       player.index_taken(0, array).eql?(true)
