@@ -25,4 +25,12 @@ describe Player do
       player.move_validate('0').eql?(false)
     end
   end
+
+  describe '#index_taken' do
+    it 'return true or false' do
+      player.index_taken(0, array).eql?(true)
+      player.index_taken(3, array).eql?(true)
+      player.index_taken(5, array).eql?(false)
+    end
+  end
 end
