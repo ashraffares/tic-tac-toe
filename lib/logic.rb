@@ -3,16 +3,6 @@ class Player
     'Wlecome to tic tac toe'
   end
 
-  def player_sign(sign)
-    @player1 = 'x'
-    @player2 = 'o'
-    if sign == 'x'
-      @@player1
-    else
-      @@player2
-    end
-  end
-
   def sign_validate(sign)
     @player1 = 'x'
     @player2 = 'o'
@@ -41,6 +31,8 @@ class Player
   end
 
   def wins(array, sign)
+    puts sign.class
+    puts array.class
     arr = []
     state = false
     win_array = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]
