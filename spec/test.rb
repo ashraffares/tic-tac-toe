@@ -43,8 +43,10 @@ describe Player do
       player.wins(array, 'o').eql?(false)
     end
   end
+end
 
-  describe Settings do
+
+describe Settings do
     describe '#flip_user' do
       it 'return x or o' do
         setting = Settings.new
@@ -59,4 +61,5 @@ describe Player do
           setting.draw_board(array).eql?('')
         end
       end
-end
+
+    end
