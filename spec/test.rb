@@ -36,4 +36,12 @@ describe Player do
       player.index_taken(5, array).eql?(false)
     end
   end
+
+  describe '#wins' do
+    it 'return true or false' do
+      player.wins(array, 'x').eql?(true)
+      player.wins(array, 'o').eql?(false)
+    end
+  end
+end
 end
