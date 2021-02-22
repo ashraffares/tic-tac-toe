@@ -52,4 +52,11 @@ describe Player do
         setting.flip_user('o').eql?('x')
       end
     end
+
+    describe '#draw_board' do
+        it 'return board on screen' do
+          setting = Settings.new
+          setting.draw_board(array).eql?('')
+        end
+      end
 end
