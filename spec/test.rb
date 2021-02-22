@@ -28,6 +28,7 @@ describe Player do
     end
   end
 
+  #index_taken
   describe '#index_taken' do
     it 'return true or false' do
       player.index_taken(0, array).eql?(true)
