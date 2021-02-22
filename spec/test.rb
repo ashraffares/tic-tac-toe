@@ -17,7 +17,7 @@ describe Player do
       player.sign_validate('s').eql?(false)
     end
   end
-
+# move_validate
   describe '#move_validate' do
     it 'return true or false' do
       player.move_validate('1').eql?(true)
