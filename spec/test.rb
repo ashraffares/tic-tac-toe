@@ -9,7 +9,7 @@ describe Player do
       player.game_name.eql?('Wlecome to tic tac toe')
     end
   end
-
+#sign_validate test
   describe '#sign_validate' do
     it 'return true or false' do
       player.sign_validate('x').eql?(true)
