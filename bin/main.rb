@@ -1,85 +1,62 @@
 #!/usr/bin/env ruby
-
-puts 'welcome to tic toc toe game'
-def new_player
-  puts 'player one choose a symbol x or o ?'
-  user_symbol = gets.chomp
-  case user_symbol
-  when 'x'
-    fplayers = 'x'
-    splayers = 'o'
-  when 'o'
-    fplayers = 'o'
-    splayers = 'x'
-  else
-    puts 'wrong inputs try again'
-    return new_player
-  end
-
-  puts "player one has the sign #{fplayers}"
-  puts "player two has the sign #{splayers}"
-  puts
-end
-
-board = %w[1 2 3 4 5 6 7 8 9]
-def boardshap(board)
-  puts "#{board[0]} | #{board[1]} | #{board[2]}"
-  puts "#{board[3]} | #{board[4]} | #{board[5]}"
-  puts "#{board[6]} | #{board[7]} | #{board[8]}"
-end
-
-def user_move(board, player_sign)
-  move_counts = 1
-  while move_counts <= 9
-    puts 'Enter your move from 1 to 9'
-    player_turn(player_sign)
-    moveaction = get_inputs(board, player_sign)
-    board[moveaction.to_i - 1] = player_sign
-    move_counts += 1
-    boardshap(board)
-    player_sign = if player_sign == 'x'
-                    'o'
-                  else
-                    'x'
-                  end
-  end
-end
-
-def player_turn(player_sign)
-  if player_sign == 'o'
-    puts 'your turn second player'
-  else
-    puts 'your turn first player'
-  end
-end
-
-def get_inputs(board, player_sign)
-  moveaction = gets.chomp.to_i
-  if moveaction <= 9 && moveaction.positive?
-    if board[moveaction - 1] == 'x' || board[moveaction - 1] == 'o'
-      puts 'already selected!!!'
-      user_move(board, player_sign)
+require_relative '../lib/settings'
+require_relative '../lib/logic'
+player = Player.new
+puts player.game_name
+# player sign just valdiate that the use Enter the correct symbol
+def players(sign, player)
+  state = true
+  while state
+    if player.sign_validate(sign)
+      puts "player #{sign} make the move"
+      break
+    else
+      puts 'enter the correct value'
+      sign = gets.chomp
     end
-    moveaction
-  else
-    puts 'invaild inputs please enter number from 1 to 9!!!'
-    user_move(board, player_sign)
   end
+  sign
 end
 
-def player_won(player_one_turn)
-  puts 'Game ended!'
-  if player_one_turn
-    puts 'Player one won!'
-  else
-    puts 'Player two won!'
+# move_check which takes the user input and validate input for number between 1 and 9 and make move on the board
+def move_check(move, array, var, player)
+  state = true
+  while state
+    if player.move_validate(move) && player.index_taken(move - 1, array)
+      array[move - 1] = var
+      break
+    else
+      puts 'enter the correct value'
+      move = gets.chomp.to_i
+    end
   end
 end
+b = Settings.new
+array = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+puts 'choose the player (1 is x) or (2 is o)'
+sign = gets.chomp
+sign = players(sign, player)
 
+# draw if no wins just print draw
 def draw
-  puts 'Game ended!'
-  puts "It's a draw"
+  puts 'its a draw'
+  puts "Game Ended ! \u{1F61C}"
 end
 
-new_player
-user_move(board, 'x')
+i = 0
+while i < 9
+  move = gets.chomp.to_i
+  move_check(move, array, sign, player)
+  puts b.draw_board(array).to_s
+  if player.wins(array, sign)
+    puts "player #{sign} wins \u{1F911}"
+    break
+  end
+  if i == 8
+    draw
+    break
+  end
+  sign = b.flip_user(sign)
+  puts "player #{sign} make the move"
+  i += 1
+end
