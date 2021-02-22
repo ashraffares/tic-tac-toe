@@ -25,36 +25,4 @@ describe Player do
       player.move_validate('0').eql?(false)
     end
   end
-
-  describe '#index_taken' do
-    it 'return true or false' do
-      player.index_taken(0, array).eql?(true)
-      player.index_taken(3, array).eql?(true)
-      player.index_taken(5, array).eql?(false)
-    end
-  end
-
-  describe '#wins' do
-    it 'return true or false' do
-      player.wins(array, 'x').eql?(true)
-      player.wins(array, 'o').eql?(false)
-    end
-  end
-end
-
-describe Settings do
-  describe '#flip_user' do
-    it 'return x or o' do
-      setting = Settings.new
-      setting.flip_user('x').eql?('o')
-      setting.flip_user('o').eql?('x')
-    end
-  end
-
-  describe '#draw_board' do
-    it 'return board on screen' do
-      setting = Settings.new
-      setting.draw_board(array).eql?('')
-    end
-  end
 end
