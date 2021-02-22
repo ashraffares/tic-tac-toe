@@ -43,5 +43,13 @@ describe Player do
       player.wins(array, 'o').eql?(false)
     end
   end
-end
+
+  describe Settings do
+    describe '#flip_user' do
+      it 'return x or o' do
+        setting = Settings.new
+        setting.flip_user('x').eql?('o')
+        setting.flip_user('o').eql?('x')
+      end
+    end
 end
