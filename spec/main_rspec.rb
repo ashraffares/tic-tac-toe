@@ -16,6 +16,9 @@ describe Player do
       expect(player.sign_validate('x')).to eql(true)
       expect(player.sign_validate('o')).to eql(true)
       expect(player.sign_validate('s')).to eql(false)
+      expect(player.sign_validate('m')).to eql(false)
+      expect(player.sign_validate('f')).to eql(false)
+      expect(player.sign_validate('r')).to eql(false)
     end
   end
 
@@ -25,6 +28,9 @@ describe Player do
       expect(player.move_validate('1')).to eql(true)
       expect(player.move_validate('10')).to eql(false)
       expect(player.move_validate('0')).to eql(false)
+      expect(player.move_validate('10')).to eql(false)
+      expect(player.move_validate('11')).to eql(false)
+      expect(player.move_validate('40')).to eql(false)
     end
   end
 
@@ -41,6 +47,10 @@ describe Player do
     it 'return true or false' do
       expect(player.wins(%w[x x x], 'x')).to eql(true)
       expect(player.wins(%w[o x x], 'o')).to eql(false)
+      expect(player.wins(%w[o o x], 'o')).to eql(false)
+      expect(player.wins(%w[o x x], 'x')).to eql(false)
+      expect(player.wins(%w[o x o], 'o')).to eql(false)
+      expect(player.wins(%w[x o x], 'x')).to eql(false)
     end
   end
 end
