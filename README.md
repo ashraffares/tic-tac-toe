@@ -24,6 +24,7 @@ This project implements Tic tac game. The game should be played by two participa
 ## Built With
 
 - Ruby
+- Rspec
 
 ## Knowledge about Ruby:
 
@@ -34,6 +35,7 @@ This project implements Tic tac game. The game should be played by two participa
 - Blocks
 - Classes
 - Module
+
 ## Getting Started
 
 - git clone: Github repo
@@ -47,9 +49,9 @@ This project implements Tic tac game. The game should be played by two participa
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/@uwadonat)
-- Twitter: [@twitterhandle](https://twitter.com/@uwamahoroDonat)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/uwamahoro-donat-84b5bb1b7/)
+- GitHub: [@elyor](https://github.com/@elyor)
+- Twitter: [@Elyor](https://twitter.com/@elyor-doniyorov)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/feed/)
 
 👤 **Author2**
 
